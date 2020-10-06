@@ -46,7 +46,7 @@ Here is the source code :
 #include &lt;stdio.h&gt;#include &lt;unistd.h&gt;#include &lt;stdlib.h&gt; char * binsh = &#34;/bin/sh&#34;; int main() { setvbuf(stdout, 0, 2, 0); setvbuf(stderr, 0, 2, 0); system(NULL); char * shellcode[0]; printf(&#34;Unfortunately, no one can be told what the Matrix is.">
 <meta itemprop="datePublished" content="2020-10-06T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-10-06T00:00:00+00:00" />
-<meta itemprop="wordCount" content="308">
+<meta itemprop="wordCount" content="312">
 
 
 
@@ -181,7 +181,7 @@ Here is the source code :
 </code></pre></div><h3 id="solution">Solution</h3>
 <p>The vulnerability lies in the read.</p>
 <p>We want to execute a payload like <code>system('/bin/sh')</code></p>
-<p>First, we have to find the padding :</p>
+<p>First, we have to find the padding where we overwrite $rsp :</p>
 <p><em>Run cyclic(100) from pwntools and give the string to the binary in gdb, you will find the offset to $rsp with the pwntools function : cyclic_find()</em></p>
 <p>We found a padding of 8 bytes</p>
 <p>By decompiling we found the system address because there is a call to system in the main function.</p>
