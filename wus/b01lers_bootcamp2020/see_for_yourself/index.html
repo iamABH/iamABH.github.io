@@ -184,7 +184,7 @@ Here is the source code :
 <p>First, we have to find the padding where we overwrite $rsp :</p>
 <p><em>Run cyclic(100) from pwntools and give the string to the binary in gdb, you will find the offset to $rsp with the pwntools function : cyclic_find()</em></p>
 <p>We found a padding of 8 bytes</p>
-<p>By decompiling we found the system address because there is a call to system in the main function.</p>
+<p>By disassembling we found the system address because there is a call to system in the main function.</p>
 <p>And with gdb we found the address of &lsquo;/bin/sh&rsquo; :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">search-pattern <span style="color:#e6db74">&#34;/bin/sh&#34;</span>
 </code></pre></div><p>Let&rsquo;s find a &ldquo;pop rdi; ret&rdquo; gadget with ropper :</p>
