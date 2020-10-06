@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="">
+<meta name="author" content="map[name:ABH]">
 <meta name="description" content="Context  The matrix requires a more advanced trick this time. Hack it.
  We are given two files : simplerop the binary and simplerop.c : the source code
 As the name suggests, it&amp;rsquo;s a basic ROP : my first ROP in CTF (´∀`)
@@ -19,7 +19,7 @@ Here is the source code :
 
     <title>
         
-             b01lers CTF bootcamp 2020 - See for yourself Write-up :: ABH  — Cybersecurity addict !
+            b01lers CTF bootcamp 2020 - See for yourself Write-up :: ABH  — Cybersecurity addict !
         
     </title>
 
@@ -37,15 +37,15 @@ Here is the source code :
 
 
 
-<meta itemprop="name" content=" b01lers CTF bootcamp 2020 - See for yourself Write-up">
+<meta itemprop="name" content="b01lers CTF bootcamp 2020 - See for yourself Write-up">
 <meta itemprop="description" content="Context  The matrix requires a more advanced trick this time. Hack it.
  We are given two files : simplerop the binary and simplerop.c : the source code
 As the name suggests, it&rsquo;s a basic ROP : my first ROP in CTF (´∀`)
 There&rsquo;s not much security : no canary and no PIE.
 Here is the source code :
 #include &lt;stdio.h&gt;#include &lt;unistd.h&gt;#include &lt;stdlib.h&gt; char * binsh = &#34;/bin/sh&#34;; int main() { setvbuf(stdout, 0, 2, 0); setvbuf(stderr, 0, 2, 0); system(NULL); char * shellcode[0]; printf(&#34;Unfortunately, no one can be told what the Matrix is.">
-<meta itemprop="datePublished" content="2020-10-06T22:45:54+02:00" />
-<meta itemprop="dateModified" content="2020-10-06T22:45:54+02:00" />
+<meta itemprop="datePublished" content="2020-10-06T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-10-06T00:00:00+00:00" />
 <meta itemprop="wordCount" content="308">
 
 
@@ -53,7 +53,7 @@ Here is the source code :
 <meta itemprop="keywords" content="" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=" b01lers CTF bootcamp 2020 - See for yourself Write-up"/>
+<meta name="twitter:title" content="b01lers CTF bootcamp 2020 - See for yourself Write-up"/>
 <meta name="twitter:description" content="Context  The matrix requires a more advanced trick this time. Hack it.
  We are given two files : simplerop the binary and simplerop.c : the source code
 As the name suggests, it&rsquo;s a basic ROP : my first ROP in CTF (´∀`)
@@ -63,7 +63,7 @@ Here is the source code :
 
 
 
-    <meta property="og:title" content=" b01lers CTF bootcamp 2020 - See for yourself Write-up" />
+    <meta property="og:title" content="b01lers CTF bootcamp 2020 - See for yourself Write-up" />
 <meta property="og:description" content="Context  The matrix requires a more advanced trick this time. Hack it.
  We are given two files : simplerop the binary and simplerop.c : the source code
 As the name suggests, it&rsquo;s a basic ROP : my first ROP in CTF (´∀`)
@@ -72,15 +72,16 @@ Here is the source code :
 #include &lt;stdio.h&gt;#include &lt;unistd.h&gt;#include &lt;stdlib.h&gt; char * binsh = &#34;/bin/sh&#34;; int main() { setvbuf(stdout, 0, 2, 0); setvbuf(stderr, 0, 2, 0); system(NULL); char * shellcode[0]; printf(&#34;Unfortunately, no one can be told what the Matrix is." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.abhw0rld.com/wus/b01lers_bootcamp2020/see_for_yourself/" />
-<meta property="article:published_time" content="2020-10-06T22:45:54+02:00" />
-<meta property="article:modified_time" content="2020-10-06T22:45:54+02:00" /><meta property="og:site_name" content="ABH" />
+<meta property="article:published_time" content="2020-10-06T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-10-06T00:00:00+00:00" /><meta property="og:site_name" content="ABH" />
 
 
 
 
 
 
-    <meta property="article:published_time" content="2020-10-06 22:45:54 &#43;0200 CEST" />
+
+    <meta property="article:published_time" content="2020-10-06 00:00:00 &#43;0000 UTC" />
 
 
 

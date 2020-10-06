@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ABH</title>
-    <link>https://www.abhw0rld.com/</link>
-    <description>Recent content on ABH</description>
+    <title>b01lers CTF bootcamp 2020 on ABH</title>
+    <link>https://www.abhw0rld.com/series/b01lers-ctf-bootcamp-2020/</link>
+    <description>Recent content in b01lers CTF bootcamp 2020 on ABH</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 06 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.abhw0rld.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.abhw0rld.com/series/b01lers-ctf-bootcamp-2020/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>b01lers CTF bootcamp 2020 - See for yourself Write-up</title>
       <link>https://www.abhw0rld.com/wus/b01lers_bootcamp2020/see_for_yourself/</link>
@@ -20,18 +20,6 @@ As the name suggests, it&amp;rsquo;s a basic ROP : my first ROP in CTF (´∀`)
 There&amp;rsquo;s not much security : no canary and no PIE.
 Here is the source code :
 #include &amp;lt;stdio.h&amp;gt;#include &amp;lt;unistd.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt; char * binsh = &amp;#34;/bin/sh&amp;#34;; int main() { setvbuf(stdout, 0, 2, 0); setvbuf(stderr, 0, 2, 0); system(NULL); char * shellcode[0]; printf(&amp;#34;Unfortunately, no one can be told what the Matrix is.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.abhw0rld.com/me/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.abhw0rld.com/me/</guid>
-      <description>Hello, i am ABH. o/ I am addicted to Cybersecurity challenge of any kind ( s/o Root-me )
-I also do CTFs in my spare time with the teams : RootMeUpBeforeYouGoGo and A&amp;lt;3.
-I am a french student in the -awesome- Master Cybersecurity @ Université de Paris and i am doing an internship @ Société Générale as a Cybersecurity Expert.
-The goal of this website is to aggregate my writeups -and maybe some articles- about infosec.</description>
     </item>
     
   </channel>
