@@ -6,7 +6,22 @@
     <description>Recent content on ABH</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright><atom:link href="https://www.abhw0rld.com/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 06 Oct 2020 22:45:54 +0200</lastBuildDate><atom:link href="https://www.abhw0rld.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> b01lers CTF bootcamp 2020 - See for yourself Write-up</title>
+      <link>https://www.abhw0rld.com/wus/see_for_yourself/</link>
+      <pubDate>Tue, 06 Oct 2020 22:45:54 +0200</pubDate>
+      
+      <guid>https://www.abhw0rld.com/wus/see_for_yourself/</guid>
+      <description>Context  The matrix requires a more advanced trick this time. Hack it.
+ We are given two files : simplerop the binary and simplerop.c : the source code
+As the name suggests, it&amp;rsquo;s a basic ROP : my first ROP in CTF (´∀`)
+There&amp;rsquo;s not much security : no canary and no PIE.
+Here is the source code :
+#include &amp;lt;stdio.h&amp;gt;#include &amp;lt;unistd.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt; char * binsh = &amp;#34;/bin/sh&amp;#34;; int main() { setvbuf(stdout, 0, 2, 0); setvbuf(stderr, 0, 2, 0); system(NULL); char * shellcode[0]; printf(&amp;#34;Unfortunately, no one can be told what the Matrix is.</description>
+    </item>
+    
     <item>
       <title></title>
       <link>https://www.abhw0rld.com/me/</link>

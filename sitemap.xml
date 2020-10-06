@@ -3,12 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.abhw0rld.com/me/</loc>
-    <priority>0</priority>
+    <loc>https://www.abhw0rld.com/wus/see_for_yourself/</loc>
+    <lastmod>2020-10-06T22:45:54+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.abhw0rld.com/</loc>
+    <lastmod>2020-10-06T22:45:54+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.abhw0rld.com/wus/</loc>
+    <lastmod>2020-10-06T22:45:54+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.abhw0rld.com/me/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
