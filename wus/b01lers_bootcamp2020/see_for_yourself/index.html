@@ -46,7 +46,7 @@ Here is the source code :
 #include &lt;stdio.h&gt;#include &lt;unistd.h&gt;#include &lt;stdlib.h&gt; char * binsh = &#34;/bin/sh&#34;; int main() { setvbuf(stdout, 0, 2, 0); setvbuf(stderr, 0, 2, 0); system(NULL); char * shellcode[0]; printf(&#34;Unfortunately, no one can be told what the Matrix is.">
 <meta itemprop="datePublished" content="2020-10-06T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-10-06T00:00:00+00:00" />
-<meta itemprop="wordCount" content="312">
+<meta itemprop="wordCount" content="311">
 
 
 
@@ -191,7 +191,7 @@ Here is the source code :
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ropper --file simplerop --search <span style="color:#e6db74">&#34;pop rdi&#34;</span>
 </code></pre></div><p>We have a last thing to search in the binary, it&rsquo;s a &ldquo;ret;&rdquo; gadget; in order to align the stack.</p>
 <p><em>Why do we have to align the stack? ⊙▂⊙</em></p>
-<p>Read this beautiful ressource and you we&rsquo;ll know (▼▼) :
+<p>Read this beautiful ressource and you&rsquo;ll know (▼▼) :
 <a href="https://www.cameronwickes.com/stack-alignment-ubuntu-18-04-movaps/">beautiful ressource thanks voydstack for sharing</a></p>
 <p>Now that we have the ret gadget here is the payload&rsquo;s script :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
