@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ABH</title>
-    <link>abhw0rld.com/</link>
+    <link>iamABH.github.io/</link>
     <description>Recent content on ABH</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright><atom:link href="abhw0rld.com/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright><atom:link href="iamABH.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>abhw0rld.com/me/</link>
+      <link>iamABH.github.io/me/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>abhw0rld.com/me/</guid>
+      <guid>iamABH.github.io/me/</guid>
       <description>Hello, i am ABH. o/ I am addicted to Cybersecurity challenge of any kind ( s/o Root-me )
 I also do CTFs in my spare time with RootMeUpBeforeYouGoGo and A&amp;lt;3.
 I am a french student in the -awesome- Master Cybersecurity @ Université de Paris and i am doing an internship @ Société Générale as a Cybersecurity Expert.
@@ -21,10 +21,10 @@ The goal of this website is to aggregate my writeups -and maybe some articles- a
     
     <item>
       <title></title>
-      <link>abhw0rld.com/wus/nothing/</link>
+      <link>iamABH.github.io/wus/nothing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>abhw0rld.com/wus/nothing/</guid>
+      <guid>iamABH.github.io/wus/nothing/</guid>
       <description>Nothing for now. </description>
     </item>
     
