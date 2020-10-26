@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="map[name:ABH]">
+<meta name="description" content="Du 10 au 25 Octobre, j&amp;rsquo;ai participé à un CTF étudiant organisé dans le cadre de l&#39;European Cyber Week. J&amp;rsquo;ai pu me qualifier pour participer à la finale à Rennes pour représenter l&amp;rsquo;Université de Paris.
+Aujourd&amp;rsquo;hui je vous fait un petit write-up sur le challenge The Prestige parceque Alexrex en voulait un j&amp;rsquo;ai bien aimé le challenge (^.~)
+Pour mes amis anglophones, je fais le write-up en français car c&amp;rsquo;était un CTF principalement pour français &amp;lt;(_ _)&amp;gt;" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#2A3D75" />
+<link rel="canonical" href="https://www.abhw0rld.com/wus/ecw_2020/the_prestige/readme/" />
+
+
+    <title>
+        
+            ECW Qualifications 2020 - The Prestige :: ABHw0rld&#39;s blog  — Cybersecurity addict !
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.393856bf2c430bb6c01d7af07c6fe966e7cce8073435cfbbc46e590bab7405ef.css">
+
+
+
+
+
+
+<meta itemprop="name" content="ECW Qualifications 2020 - The Prestige">
+<meta itemprop="description" content="Du 10 au 25 Octobre, j&rsquo;ai participé à un CTF étudiant organisé dans le cadre de l&#39;European Cyber Week. J&rsquo;ai pu me qualifier pour participer à la finale à Rennes pour représenter l&rsquo;Université de Paris.
+Aujourd&rsquo;hui je vous fait un petit write-up sur le challenge The Prestige parceque Alexrex en voulait un j&rsquo;ai bien aimé le challenge (^.~)
+Pour mes amis anglophones, je fais le write-up en français car c&rsquo;était un CTF principalement pour français &lt;(_ _)&gt;">
+<meta itemprop="datePublished" content="2020-10-26T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-10-26T00:00:00+00:00" />
+<meta itemprop="wordCount" content="540">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ECW Qualifications 2020 - The Prestige"/>
+<meta name="twitter:description" content="Du 10 au 25 Octobre, j&rsquo;ai participé à un CTF étudiant organisé dans le cadre de l&#39;European Cyber Week. J&rsquo;ai pu me qualifier pour participer à la finale à Rennes pour représenter l&rsquo;Université de Paris.
+Aujourd&rsquo;hui je vous fait un petit write-up sur le challenge The Prestige parceque Alexrex en voulait un j&rsquo;ai bien aimé le challenge (^.~)
+Pour mes amis anglophones, je fais le write-up en français car c&rsquo;était un CTF principalement pour français &lt;(_ _)&gt;"/>
+
+
+
+    <meta property="og:title" content="ECW Qualifications 2020 - The Prestige" />
+<meta property="og:description" content="Du 10 au 25 Octobre, j&rsquo;ai participé à un CTF étudiant organisé dans le cadre de l&#39;European Cyber Week. J&rsquo;ai pu me qualifier pour participer à la finale à Rennes pour représenter l&rsquo;Université de Paris.
+Aujourd&rsquo;hui je vous fait un petit write-up sur le challenge The Prestige parceque Alexrex en voulait un j&rsquo;ai bien aimé le challenge (^.~)
+Pour mes amis anglophones, je fais le write-up en français car c&rsquo;était un CTF principalement pour français &lt;(_ _)&gt;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.abhw0rld.com/wus/ecw_2020/the_prestige/readme/" />
+<meta property="article:published_time" content="2020-10-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-10-26T00:00:00+00:00" /><meta property="og:site_name" content="ABHw0rld&#39;s blog" />
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2020-10-26 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ ./ABH_enter.world </span>
+            <span class="logo__cursor" style=
+                  "
+                   background-color:#00FEFE;
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://www.abhw0rld.com/me">Me</a></li><li><a href="https://www.abhw0rld.com/wus/">Writeups</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://www.abhw0rld.com/wus/ecw_2020/the_prestige/readme/">ECW Qualifications 2020 - The Prestige</a></h2>
+
+            
+
+            
+
+            <div class="post-content">
+                <p>Du 10 au 25 Octobre, j&rsquo;ai participé à un CTF étudiant organisé dans le cadre de l'<a href="https://www.european-cyber-week.eu/">European Cyber Week</a>. J&rsquo;ai pu me qualifier pour participer à la finale à Rennes pour représenter l&rsquo;Université de Paris.</p>
+<p>Aujourd&rsquo;hui je vous fait un petit write-up sur le challenge The Prestige parceque <del>Alexrex en voulait un</del> j&rsquo;ai bien aimé le challenge (^.~)</p>
+<p>Pour mes amis anglophones, je fais le write-up en français car c&rsquo;était un CTF principalement pour français &lt;(_ _)&gt;</p>
+<h2 id="contexte">Contexte</h2>
+<blockquote>
+<p>In this challenge, you will have to find the prestige of this magic trick. A magician locked the flag in a safe with an image. Your only way to open it is to provide an image that would have the same md5 checksum but not the same sha1. Good luck!</p>
+</blockquote>
+<p>Dans le cadre de notre challenge on nous donne donc une image : <a href="/srcwu/prestige/PhazeToGround.png">PhazeToGround</a>, on doit ensuite générer une seconde image, qui a le même MD5 que cette fameuse image <em>PhazeToGround</em> et qui a un SHA1 différent.</p>
+<p>C&rsquo;est ce qu&rsquo;on appelle une collision MD5 !</p>
+<p>Un site web est aussi disponible pour verifier que notre seconde image est bien une collision de la première. (et nous donner le flag par ailleurs)</p>
+<h2 id="résolution">Résolution</h2>
+<p>Pour faire ce challenge, je dirais que le gros du travail est de la recherche. (⌐■_■)</p>
+<p>Tout d&rsquo;abord, on jette un premier coup d&rsquo;oeil sur l&rsquo;image :</p>
+<p><img src="/srcwu/prestige/first_look.png" alt="Premier regard sur l&rsquo;image è.é"></p>
+<p>On voit très bien que ce n&rsquo;est pas une image standard et que quelquechose se cache dedans è.é</p>
+<p>Pour md5, avec nos moyens actuels, la second pre-image resistance est assuré, c&rsquo;est à dire que :
+Pour tout message x, il est en pratique impossible de trouver un message x' tel que h(x) == h(x') et que x =/= x'.</p>
+<p>Rangez donc vos scripts de brute force et allons chercher une astuce pour obtenir ce que l&rsquo;on veut ( ˙▿˙ )/( ˙▿˙ )/</p>
+<p>Je fais alors des recherches sur les collisions MD5 sur les images PNG et je tombe sur ce merveilleux github d'<em>Ange Albertini</em> à propos des collisions :
+<a href="https://github.com/corkami/collisions">corkami</a></p>
+<p>La partie sur les collisions d&rsquo;images PNG suscitent mon intêret et je vais donc voir le script <a href="https://github.com/corkami/collisions/blob/master/scripts/png.py">png.py</a> qui génére des collisions en prenant comme entrée deux pngs.</p>
+<p>Je regarde alors ce petit bout de script et le lance une première fois sur deux pngs qui trainaient sur mon ordi, et je me rends alors compte que les images resultantes sont très similaires à l&rsquo;image qu&rsquo;on nous donne dans le challenge.</p>
+<p>Je me dis alors que l&rsquo;image qu&rsquo;on nous a donné est le resultat de ce même script et qu&rsquo;il faut donc retrouver son âme-soeur manquante (°◡°♡)</p>
+<p>Je lance donc un <code>vbindiff</code> sur les deux images resultantes du script pour voir les bytes qui sont différents.</p>
+<p><img src="/srcwu/prestige/vbindiff.png" alt="Un p&rsquo;tit vbindiff !"></p>
+<p>On voit donc bien que deux bytes sont différents dans les deux fichiers : les bytes 49 &amp; 89.</p>
+<p>Dans la première image ces deux bytes sont respectivement égaux à <code>00</code> &amp; <code>F2</code>, et dans la deuxième à <code>01</code> &amp; <code>F1</code>.</p>
+<p>Dans notre image, ces deux bytes sont égaux à <code>00</code> &amp; <code>D2</code>.</p>
+<p>On va donc incrémenter le premier byte et décrementer le deuxième.</p>
+<p>Voici la difference entre l&rsquo;image modifié et celle d&rsquo;origine :</p>
+<p><img src="/srcwu/prestige/vbindiff_final.png" alt="Un p&rsquo;tit vbindiff !"></p>
+<p>On verifie le resultat avec notre petit md5sum et c&rsquo;est gagné !</p>
+<p><img src="/srcwu/prestige/md5sum.png" alt="Gagné !"></p>
+<p>╰(▔∀▔)╯</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+            <span><a href="https://www.abhw0rld.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span><a href="https://www.abhw0rld.com/me">ABH</a></span>
+          </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>
