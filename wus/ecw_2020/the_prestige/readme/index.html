@@ -40,7 +40,7 @@ Aujourd&rsquo;hui je vous fait un petit write-up sur le challenge The Prestige p
 Pour mes amis anglophones, je fais le write-up en français car c&rsquo;était un CTF principalement pour français &lt;(_ _)&gt;">
 <meta itemprop="datePublished" content="2020-10-26T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-10-26T00:00:00+00:00" />
-<meta itemprop="wordCount" content="540">
+<meta itemprop="wordCount" content="539">
 
 
 
@@ -156,24 +156,24 @@ Pour mes amis anglophones, je fais le write-up en français car c&rsquo;était u
 <p>Pour faire ce challenge, je dirais que le gros du travail est de la recherche. (⌐■_■)</p>
 <p>Tout d&rsquo;abord, on jette un premier coup d&rsquo;oeil sur l&rsquo;image :</p>
 <p><img src="/srcwu/prestige/first_look.png" alt="Premier regard sur l&rsquo;image è.é"></p>
-<p>On voit très bien que ce n&rsquo;est pas une image standard et que quelquechose se cache dedans è.é</p>
-<p>Pour md5, avec nos moyens actuels, la second pre-image resistance est assuré, c&rsquo;est à dire que :
+<p>On voit très bien que ce n&rsquo;est pas une image standard et que quelque chose se cache dedans è.é</p>
+<p>Pour md5, avec nos moyens actuels, la <em>second pre-image resistance</em> est assuré, c&rsquo;est à dire que :
 Pour tout message x, il est en pratique impossible de trouver un message x' tel que h(x) == h(x') et que x =/= x'.</p>
 <p>Rangez donc vos scripts de brute force et allons chercher une astuce pour obtenir ce que l&rsquo;on veut ( ˙▿˙ )/( ˙▿˙ )/</p>
-<p>Je fais alors des recherches sur les collisions MD5 sur les images PNG et je tombe sur ce merveilleux github d'<em>Ange Albertini</em> à propos des collisions :
+<p>Je fais alors des recherches sur les collisions MD5 d&rsquo;image PNG et je tombe sur ce merveilleux github d'<em>Ange Albertini</em> à propos des collisions :
 <a href="https://github.com/corkami/collisions">corkami</a></p>
 <p>La partie sur les collisions d&rsquo;images PNG suscitent mon intêret et je vais donc voir le script <a href="https://github.com/corkami/collisions/blob/master/scripts/png.py">png.py</a> qui génére des collisions en prenant comme entrée deux pngs.</p>
-<p>Je regarde alors ce petit bout de script et le lance une première fois sur deux pngs qui trainaient sur mon ordi, et je me rends alors compte que les images resultantes sont très similaires à l&rsquo;image qu&rsquo;on nous donne dans le challenge.</p>
+<p>Je regarde alors ce petit bout de script et le lance une première fois sur deux pngs qui trainaient sur mon ordi, et je me rends alors compte que les images résultantes sont très similaires à l&rsquo;image qu&rsquo;on nous donne dans le challenge.</p>
 <p>Je me dis alors que l&rsquo;image qu&rsquo;on nous a donné est le resultat de ce même script et qu&rsquo;il faut donc retrouver son âme-soeur manquante (°◡°♡)</p>
-<p>Je lance donc un <code>vbindiff</code> sur les deux images resultantes du script pour voir les bytes qui sont différents.</p>
+<p>Je lance donc un <code>vbindiff</code> sur les deux images résultantes du script pour voir les bytes qui sont différents.</p>
 <p><img src="/srcwu/prestige/vbindiff.png" alt="Un p&rsquo;tit vbindiff !"></p>
 <p>On voit donc bien que deux bytes sont différents dans les deux fichiers : les bytes 49 &amp; 89.</p>
 <p>Dans la première image ces deux bytes sont respectivement égaux à <code>00</code> &amp; <code>F2</code>, et dans la deuxième à <code>01</code> &amp; <code>F1</code>.</p>
 <p>Dans notre image, ces deux bytes sont égaux à <code>00</code> &amp; <code>D2</code>.</p>
 <p>On va donc incrémenter le premier byte et décrementer le deuxième.</p>
-<p>Voici la difference entre l&rsquo;image modifié et celle d&rsquo;origine :</p>
+<p>Voici la différence entre l&rsquo;image modifiée et celle d&rsquo;origine :</p>
 <p><img src="/srcwu/prestige/vbindiff_final.png" alt="Un p&rsquo;tit vbindiff !"></p>
-<p>On verifie le resultat avec notre petit md5sum et c&rsquo;est gagné !</p>
+<p>On vérifie le résultat avec notre petit md5sum et c&rsquo;est gagné !</p>
 <p><img src="/srcwu/prestige/md5sum.png" alt="Gagné !"></p>
 <p>╰(▔∀▔)╯</p>
 
