@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 06 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.abhw0rld.com/series/b01lers-ctf-bootcamp-2020/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>b01lers CTF bootcamp 2020 - See for yourself</title>
-      <link>https://www.abhw0rld.com/wus/b01lers_bootcamp2020/see_for_yourself/</link>
+      <link>https://www.abhw0rld.com/write-up/b01lers_bootcamp2020/see_for_yourself/</link>
       <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.abhw0rld.com/wus/b01lers_bootcamp2020/see_for_yourself/</guid>
+      <guid>https://www.abhw0rld.com/write-up/b01lers_bootcamp2020/see_for_yourself/</guid>
       <description>Context  The matrix requires a more advanced trick this time. Hack it.
  We are given two files : simplerop the binary and simplerop.c : the source code
 As the name suggests, it&amp;rsquo;s a basic ROP : my first ROP in CTF (´∀`)
