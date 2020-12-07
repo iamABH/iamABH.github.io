@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Write-ups on ABHw0rld&#39;s blog</title>
-    <link>https://www.abhw0rld.com/write-up/</link>
-    <description>Recent content in Write-ups on ABHw0rld&#39;s blog</description>
+    <title>DefCamp Capture the Flag 2020 on ABHw0rld&#39;s blog</title>
+    <link>https://www.abhw0rld.com/series/defcamp-capture-the-flag-2020/</link>
+    <description>Recent content in DefCamp Capture the Flag 2020 on ABHw0rld&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-en</language>
-    <lastBuildDate>Mon, 07 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.abhw0rld.com/write-up/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.abhw0rld.com/series/defcamp-capture-the-flag-2020/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DefCamp Capture the Flag 2020 - Dumb Discord</title>
       <link>https://www.abhw0rld.com/write-up/defcamp_2020/dumbdiscord/</link>
@@ -46,31 +46,6 @@ Solution For this challenge, I used Binary Ninja and the nice plug-in Restore Go
 We are given a stripped go binary.
 When we run the program we see an encoded message :
 We have to find the original message.</description>
-    </item>
-    
-    <item>
-      <title>ECW Qualifications 2020 - The Prestige</title>
-      <link>https://www.abhw0rld.com/write-up/ecw_2020/the_prestige/readme/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.abhw0rld.com/write-up/ecw_2020/the_prestige/readme/</guid>
-      <description>Du 10 au 25 Octobre, j&amp;rsquo;ai participé à un CTF étudiant organisé dans le cadre de l&#39;European Cyber Week. J&amp;rsquo;ai pu me qualifier pour participer à la finale à Rennes pour représenter l&amp;rsquo;Université de Paris.
-Aujourd&amp;rsquo;hui je vous fais un petit write-up sur le challenge The Prestige parce que Alexrex en voulait un j&amp;rsquo;ai bien aimé le challenge (^.~)
-Pour mes amis anglophones, je fais le write-up en français car c&amp;rsquo;était un CTF principalement pour français &amp;lt;(_ _)&amp;gt;</description>
-    </item>
-    
-    <item>
-      <title>b01lers CTF bootcamp 2020 - See for yourself</title>
-      <link>https://www.abhw0rld.com/write-up/b01lers_bootcamp2020/see_for_yourself/</link>
-      <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.abhw0rld.com/write-up/b01lers_bootcamp2020/see_for_yourself/</guid>
-      <description>Context  The matrix requires a more advanced trick this time. Hack it.
- We are given two files : simplerop the binary and simplerop.c : the source code
-As the name suggests, it&amp;rsquo;s a basic ROP : my first ROP in CTF (´∀`)
-There&amp;rsquo;s not much security : no canary and no PIE.
-Here is the source code :
-#include &amp;lt;stdio.h&amp;gt;#include &amp;lt;unistd.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt; char * binsh = &amp;#34;/bin/sh&amp;#34;; int main() { setvbuf(stdout, 0, 2, 0); setvbuf(stderr, 0, 2, 0); system(NULL); char * shellcode[0]; printf(&amp;#34;Unfortunately, no one can be told what the Matrix is.</description>
     </item>
     
   </channel>

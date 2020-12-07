@@ -6,7 +6,48 @@
     <description>Recent content on ABHw0rld&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-en</language>
-    <lastBuildDate>Mon, 26 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.abhw0rld.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.abhw0rld.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DefCamp Capture the Flag 2020 - Dumb Discord</title>
+      <link>https://www.abhw0rld.com/write-up/defcamp_2020/dumbdiscord/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.abhw0rld.com/write-up/defcamp_2020/dumbdiscord/</guid>
+      <description>Context : This week-end, I participated in the Defcamp Capture the Flag 2020 with my team RootMeUpBeforeYouGoGo We have been ranked 10th.
+I did this challenge with my team-mates Grillette and DSpiricate.
+Description Well here is an example of a funny discord bot.
+Solution We are given a Python compiled bytecode file
+To decompile it, I used Decompiler.com and it gave me this :
+# uncompyle6 version 3.7.4 # Python bytecode 3.</description>
+    </item>
+    
+    <item>
+      <title>DefCamp Capture the Flag 2020 - QR Mania</title>
+      <link>https://www.abhw0rld.com/write-up/defcamp_2020/qrmania/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.abhw0rld.com/write-up/defcamp_2020/qrmania/</guid>
+      <description>Context : This week-end, I participated in the Defcamp Capture the Flag 2020 with my team RootMeUpBeforeYouGoGo We have been ranked 10th.
+Description We intercepted some weird requests. See if you can extract some useful information.
+Solution We are given a pcap file.
+Looking into the objects in Wireshark, we see some .png files.
+I exported with Wireshark all the png files, and looking into one we see it&amp;rsquo;s a disco flavored QR code :</description>
+    </item>
+    
+    <item>
+      <title>DefCamp Capture the Flag 2020 - StrippedGO</title>
+      <link>https://www.abhw0rld.com/write-up/defcamp_2020/stripped_go/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.abhw0rld.com/write-up/defcamp_2020/stripped_go/</guid>
+      <description>Context : This week-end, I participated in the Defcamp Capture the Flag 2020 with my team RootMeUpBeforeYouGoGo We have been ranked 10th.
+Description I heard you can&amp;rsquo;t redo what&amp;rsquo;s deleted. Is that true?
+Solution For this challenge, I used Binary Ninja and the nice plug-in Restore Golang Symbols by Daniel Weber
+We are given a stripped go binary.
+When we run the program we see an encoded message :
+We have to find the original message.</description>
+    </item>
+    
     <item>
       <title>ECW Qualifications 2020 - The Prestige</title>
       <link>https://www.abhw0rld.com/write-up/ecw_2020/the_prestige/readme/</link>
