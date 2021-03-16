@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/home/abh/Sync/abhw0rld/iamABH.github.io/abhw0rld",
+	"sourceRoot": "/home/abh/Sync/abhw0rld/abhw0rld",
 	"sources": [
 		"themes/hello-friend-ng/assets/scss/main.scss",
 		"themes/hello-friend-ng/assets/scss/_normalize.scss",
