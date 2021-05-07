@@ -36,7 +36,7 @@ paginate     = 10
   url  = "https://root-me.org/ABH"
   [[params.social]]
   name = "github"
-  url = "https://github.com/iamABH"
+  url = "https://github.com/iamABH/"
   [[params.social]]
   name = "email"
   url  = "mailto:abh@abhw0rld.com"
