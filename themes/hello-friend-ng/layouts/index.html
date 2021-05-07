@@ -1,0 +1,59 @@
+{{ define "main" }}
+<style>
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .50em solid #00FEFE; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    font-size: 100%;
+    animation: 
+      typing 4.5s steps(40, end),
+      blink-caret 1s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:#00FEFE; }
+  }
+</style>
+    <main aria-role="main">
+        <div>
+            {{ if .Site.Params.Portrait.Path }}
+               <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
+            {{ end }}
+            
+            
+
+        <div class="typewriter">
+        <h1>Welcome to my w0r1d !</h1>
+        </div>
+  
+  
+            {{- with .Site.Params.homeSubtitle }}
+	    <br>
+	    Student in Master Cybersecurity @ Université de Paris
+	    <br>
+	    <br>
+	    CTFer @ RootMeUpBeforeYouGoGo
+	    <br>
+	    <br>
+	    <a href="/me">whoami?</a>
+                <p>{{.}}</p>
+            {{- end }}
+
+            {{- with .Site.Params.social }}
+                <div>
+                    {{ partial "social-icons.html" . }}
+                </div>
+            {{- end }}
+        </div>
+    </main>
+{{ end }}
